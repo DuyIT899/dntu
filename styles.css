@@ -546,21 +546,22 @@ body, html {
   .footer .zalo{
     background-color: #FFE9B4;
     border-radius: 25px;
-    width: 120px;
+    width: 150px;
+    margin-left: 13px;
   }
   .footer .facebook{
     background-color: #FFE9B4;
     border-radius: 25px;
     width: 150px;
     height: 39px;
+    margin-top: 10px;
   }
   .footer .youtube{
     background-color: #FFE9B4;
     border-radius: 25px;
     width: 150px;
     height: 39px;
-    margin-top: 15px;
-    margin-left: 50px;
+    margin-top: 10px;
   }
   .footer .mail{
     margin-top: 17px;
@@ -778,6 +779,15 @@ body, html {
     .statistics .col .Edocument .content .text{
       font-size: 17px;
     }
+    .news-events .row .col-5 p{
+      font-size: 18px;
+    }
+    .news-events .row .col-7 a {
+      font-size: 33px;
+    }
+    .news-events button{
+      font-size: 33px;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -886,6 +896,9 @@ body, html {
     margin-left: 10px;
     font-size: 15px;
   }
+  .news-events button{
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -928,6 +941,17 @@ body, html {
     display: none !important;
     transition-property: all;
     transition-duration: 1s;
+    animation: slideWidth 0.5s ease;
+  }
+  @keyframes slideWidth {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   .search-bar select{
     width: 95px;
@@ -938,6 +962,17 @@ body, html {
 
   .lower-menu nav ul li {
     margin-left: 35px;
+    animation: slideDown 0.5s ease;
+  }
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   .lower-menu nav ul li a{
     font-size: 9px;
@@ -1029,14 +1064,20 @@ body, html {
     font-size: 10px;
   }
   .hot-news p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .news-events .row .col-5 p {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 10px;
   }
   .menu-mobile:hover .lower-menu{
     display: block!important;
+  }
+  .title{
+    font-size: 27px!important;
+  }
+  .news-events button{
+    font-size: 20px;
   }
 }
 
