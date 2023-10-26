@@ -714,7 +714,7 @@ body, html {
     border-radius: 15px 0;
     padding: 10px;
   }
-  .title{
+  .title-news-detail{
     background-color: #0F6670;
     color: #E1E2DA;
     padding: 100px 0 1px 255px;
@@ -753,7 +753,7 @@ body, html {
 .news-main-final {
     padding: 50px 0;
 }
-.btn-more{
+.btn-more-news-detail{
     background-color: #FFE5E5;
     color: #C50202;
     border-radius: 50px;
@@ -762,7 +762,9 @@ body, html {
     font-weight: bold;
     font-size: 20px;
 }
-
+.news-menu{
+  border: none;
+}
 
 
 @media screen and (max-width: 1200px){
@@ -853,6 +855,14 @@ body, html {
     }
     .news-events button{
       font-size: 33px;
+    }
+
+    .title-news-detail{
+      padding: 80px 0 1px 150px;
+      font-size: 25px;
+    }
+    .submenu-news-detail{
+      top: 50px !important;
     }
 }
 
@@ -964,6 +974,19 @@ body, html {
   }
   .news-events button{
     font-size: 25px;
+  }
+
+  /*news details*/
+
+  .news-menu nav ul li{
+    margin-left: 25px;
+  }
+  .title-news-detail{
+    padding: 70px 0 1px 90px;
+    font-size: 25px;
+  }
+  .submenu-news-detail{
+    top: 45px !important;
   }
 }
 
@@ -1144,6 +1167,34 @@ body, html {
   }
   .news-events button{
     font-size: 20px;
+  }
+
+  /*news-details*/
+  .news-menu{
+    display: block !important;
+  }
+  .news-menu nav{
+    margin-left: 35px;
+  }
+  .news-menu nav ul li{
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .title-news-detail{
+    padding: 50px 0 1px 50px;
+    font-size: 20px;
+  }
+  .submenu-news-detail{
+    top: 40px !important;
+  }
+  .news-menu nav ul li .submenu a{
+    font-size: 10px;
+  }
+  .content h4{
+    font-size: 11px;
+  }
+  .content-news-more{
+    font-size: 9px;
   }
 }
 
