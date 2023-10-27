@@ -1063,6 +1063,12 @@ body, html {
   .submenu-news-detail{
     top: 45px !important;
   }
+
+  /* submenu2 */
+
+  .submenu2 a{
+    font-size: 18px;
+}
 }
 
 @media screen and (max-width: 768px){
@@ -1275,6 +1281,15 @@ body, html {
   .content-news-more{
     font-size: 9px;
   }
+
+  /* submenu2 */
+
+.submenu2 a{
+    font-size: 12px;
+}
+.submenu2{
+    padding: 15px 0 0;
+}
 }
 
 @keyframes slideDown {
