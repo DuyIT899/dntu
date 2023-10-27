@@ -844,6 +844,11 @@ body, html {
   border: none;
 }
 
+/* table */
+
+.content  tbody, td, tfoot, th, thead, tr {
+  border-width: 1px !important;
+}
 
 @media screen and (max-width: 1200px){
 
