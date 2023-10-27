@@ -4,15 +4,25 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
   }
+    .menu{
+      position: fixed;
+      top: 0;
+      left: 0 ;
+      right: 0;
+      background-color: #fff;
+      z-index: 1000;
+      width: 100%;
+    }
   a{
     text-decoration: none;
   }
   .logo {
-    width: 70px;
+    width: 50px;
+    margin-left: 7%;
   }
   /* Style the upper menu */
   .upper-menu {
-    height: 75px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,31 +36,34 @@ body, html {
   
   .library-name {
     color: #C50202;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
   }
   .university-name{
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: bold;
   }
   
   .opening-hours {
     font-weight: bold;
     margin-right: 90px;
-    font-size: 20px;
+    font-size: 13px;
     color: #C50202;
+  }
+  .language{
+    font-size: 11px;
   }
 
   /* Style the lower menu */
   .lower-menu {
-    height: 85px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-top: 1px solid red;
-    margin-left: 100px;
+    margin-left: 85px;
   }
   
   
@@ -67,13 +80,20 @@ body, html {
     margin-left: 50px;
     position: relative;
   }
+  .lower-menu nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    color: #1C76BC;
+  }
 
   .lower-menu nav ul li .submenu{
     display: flex;
     flex-direction: column;
     display: none;
     position: absolute;
-    top:60px;
+    top:45px;
     background-color: #FFF;
     width: 310px;
   }
@@ -82,8 +102,7 @@ body, html {
     margin: 0px !important;
     padding: 10px 15px;
     border: 1px solid #ededed;
-    transition-property: all;
-    transition-duration: 0.5s;
+    animation: slideDown 0.5s ease;
   }
   .lower-menu nav ul li .submenu li:hover{
     background-color: #FFE9B4;
@@ -91,16 +110,11 @@ body, html {
   .lower-menu nav ul li .submenu a{
     text-decoration: none;
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
   }
+
+
   
-  .lower-menu nav ul li a {
-    text-decoration: none;
-    font-size: 22px;
-    transition-property: all;
-    transition-duration: 0.5s;
-    color: #1C76BC;
-  }
   .lower-menu nav ul li a:hover{
     color: #C50202;
 
@@ -110,7 +124,7 @@ body, html {
    }
 
   .lower-menu nav ul li i {
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .submenu{
@@ -120,10 +134,11 @@ body, html {
   /* Style the slideshow */
   .slider{
     width: 100%;
-    height: 550px;
+    height: 650px;
     margin: auto;
     position: relative;
     overflow: hidden;
+    margin-top: 120px ;
 }
 .slider .list{
     position: absolute;
@@ -245,6 +260,17 @@ body, html {
     background-color: #0F6670;
     padding: 50px 0;
   }
+  .tur{
+    justify-content: center;
+    margin-left: 55px;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .tur img{
+    border-radius: 50px;
+    height: 100px;
+  }
   .statistics .col-8 img{
     cursor: pointer;
     transition: width 0.3s ease;
@@ -331,12 +357,12 @@ body, html {
   }
   .statistics .col .document-paper .content .number{
     color: #C50202;
-    font-size: 28px;
+    font-size: 25px;
     transition-property: all;
     transition-duration: 0.5s;
   }
   .statistics .col .document-paper .content .text{
-    font-size: 20px;
+    font-size: 15px;
   }
   .statistics .col .document-paper .content .number p{
     margin-bottom: 5px !important;
@@ -371,12 +397,12 @@ body, html {
   }
   .statistics .col .Edocument .content .number{
     color: #C50202;
-    font-size: 28px;
+    font-size: 25px;
     transition-property: all;
     transition-duration: 0.5s;
   }
   .statistics .col .Edocument .content .text{
-    font-size: 20px;
+    font-size: 15px;
   }
   .statistics .col .Edocument .content .number p{
     margin-bottom: 5px !important;
@@ -449,16 +475,22 @@ body, html {
   .news-events .row .col-7 img{
     transition: transform 0.3s ease;
     width: 100%;
+    height: 450px;
   }
   .news-events .row .hot-news{
     cursor: pointer;
   }
   .news-events .row .col-5 {
     cursor: pointer;
+    height: 450px;
+    overflow-y: scroll;
   }
   .news-events button a {
     color: #C50202;
     text-decoration: none;
+  }
+  .hot-news p{
+    font-size: 30px;
   }
   .news-events .row .hot-news:hover a{
     color: #C50202;
@@ -479,8 +511,8 @@ body, html {
     transform: scale(1.05);
   }
   .news-events .row .col-5 p {
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 15px;
+    font-size: 18px;
   }
   .news-events .row .col .news1{
     margin-top: 45px;
@@ -488,7 +520,7 @@ body, html {
   .news-events button{
     color: #C50202;
     border-color: #C50202;
-    font-size: 40px;
+    font-size: 30px;
   }
   .news-events .col img {
     border-radius: 5px;
@@ -538,7 +570,7 @@ body, html {
   .footer {
     background-color: #8C1515;
     padding: 30px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .footer .col-8{
     color: #fff;
@@ -571,6 +603,52 @@ body, html {
   }
   .footer p {
     margin-bottom: 0px !important;
+  }
+
+  .footer1{
+    background-color: #efefef;
+    padding: 25px 25px 0;
+  }
+  .footer1 .col-6{
+    margin-left: 40px;
+  }
+  .footer1 img{
+    position: absolute;
+    width: 30px;
+  }
+  .footer1 a{
+    color: #000;
+  }
+  .footer1 .home-footer{
+    color: #C50202;
+    font-weight: bold;
+  }
+  .footer1 .phone i{
+    margin-right: 10px;
+  }
+  .footer1 .mail i{
+    margin-right: 10px;
+  }
+  .footer1 .facebook{
+    background-color: #FFB400;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  .footer1 .facebook i{
+    color: #3b5998; 
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  .footer1 .youtube{
+    background-color: #FFB400;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 25px;
+  }
+  .footer1 .youtube i{
+    color: #ff0000;
+    margin-left: 5px;
+    font-size: 20px;
   }
   /* Add more styles as needed for other elements */
   .slider-wrapper {
@@ -770,19 +848,19 @@ body, html {
 @media screen and (max-width: 1200px){
 
     .library-name{
-      font-size: 20px;
+      font-size: 16px;
     }
     .university-name{
-      font-size: 15px;
+      font-size: 12px;
     }
     .opening-hours{
-      font-size: 15px;
+      font-size: 12px;
     }
     .language {
-      font-size: 13px;
+      font-size: 10px;
     }
     .lower-menu nav ul li a{
-      font-size: 15px;
+      font-size: 12px;
     }
     .statistics .col .Ebook{
       margin-left: 0px;
@@ -869,19 +947,16 @@ body, html {
 @media screen and (max-width: 1000px){
 
   .library-name{
-    font-size: 16px;
+    font-size: 14px;
   }
   .university-name{
-    font-size: 11px;
+    font-size: 9px;
   }
   .opening-hours{
     font-size: 11px;
   }
   .language {
     font-size: 9px;
-  }
-  .logo{
-    width: 65px;
   }
   .lower-menu nav ul li {
     margin-left: 35px;
@@ -993,7 +1068,7 @@ body, html {
 @media screen and (max-width: 768px){
   .menu-mobile i {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .menu-mobile{ 
     display: block!important;
@@ -1021,6 +1096,7 @@ body, html {
   .logo{
     width: 35px;
     padding-bottom: 15px;
+    margin-left: 15%;
   }
   .lower-menu{
     padding: 0px;
@@ -1041,6 +1117,9 @@ body, html {
       transform: translateX(0);
       opacity: 1;
     }
+  }
+  .lower-menu nav ul li .submenu{
+    top: 60px;
   }
   .search-bar select{
     width: 95px;
@@ -1198,3 +1277,13 @@ body, html {
   }
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
